@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="영진은행">
+    <meta property="og:image" content="https://raw.githubusercontent.com/light9639/WooriBank/main/img/logo3.png">
+    <meta property="og:description" content="영진은행 웹사이트">
+    <title>영진은행</title>
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ======== skipMenu ======== -->
+    <ul class="skipMenu">
+        <li><a href="#nav">메인메뉴 바로가기</a></li>
+        <li><a href="#container">본문 바로가기</a></li>
+    </ul>
+    
+    <!-- ======== Header ======== -->
+    <header>
+        <div class="center clearFix">
+            <h1 class="logo">
+                <a href="index.html">
+                    <img class="pc_logo" src="img/logo.png" alt="logo">
+                    <img class="mobile_logo" src="img/mobile_logo.png" alt="mobile_logo">
+                </a>
+            </h1>
+            <div class="ham">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav>
+                <ul id="nav">
+                    <li>
+                        <a href="#void" class="temp">개인뱅킹</a>
+                        <ul class="sub">
+                            <li><a href="#void">조회</a></li>
+                            <li><a href="#void">이체</a></li>
+                            <li><a href="#void">오픈뱅킹</a></li>
+                            <li><a href="#void">공과금</a></li>
+                            <li><a href="#void">예금/신탁</a></li>
+                            <li><a href="#void">보험</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#void" class="temp">기업뱅킹</a>
+                        <ul class="sub">
+                            <li><a href="#void">조회</a></li>
+                            <li><a href="#void">이체</a></li>
+                            <li><a href="#void">오픈뱅킹</a></li>
+                            <li><a href="#void">공과금</a></li>
+                            <li><a href="#void">예금/신탁</a></li>
+                            <li><a href="#void">보험</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#void" class="temp">금융상품</a>
+                        <ul class="sub">
+                            <li><a href="#void">예/적금</a></li>
+                            <li><a href="#void">대출</a></li>
+                            <li><a href="#void">펀드/신탁</a></li>
+                            <li><a href="#void">보험</a></li>
+                            <li><a href="#void">외환</a></li>
+                            <li><a href="#void">찾아가는 뱅킹</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#void" class="temp">서비스안내</a>
+                        <ul class="sub">
+                            <li><a href="#void">인터넷뱅킹 관리</a></li>
+                            <li><a href="#void">통장관리</a></li>
+                            <li><a href="#void">인증센터</a></li>
+                            <li><a href="#void">사고신고</a></li>
+                            <li><a href="#void">증명서발급서비스</a></li>
+                            <li><a href="#void">보안서비스</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#void" class="temp">카드</a>
+                        <ul class="sub">
+                            <li><a href="#void">카드안내/신청</a></li>
+                            <li><a href="#void">이용대금명세서</a></li>
+                            <li><a href="#void">이용내역조회</a></li>
+                            <li><a href="#void">결제예상금액조회</a></li>
+                            <li><a href="#void">신용카드 선결제</a></li>
+                            <li><a href="#void">카드대출</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <ul class="gnb clearFix">
+                <li id="gokyaku"><a href="#void">고객센터</a></li>
+                <li><a href="login.html" id="loginArea"><img src="img/login_icon.png" alt="login icon">로그인</a></li>
+            </ul>
+        </div>
+
+        <div id="mNav">
+            <ul class="mNav">
+                <li>
+                    <a href="#void" class="temp">개인뱅킹</a>
+                    <ul class="sub">
+                        <li><a href="#void">조회</a></li>
+                        <li><a href="#void">이체</a></li>
+                        <li><a href="#void">오픈뱅킹</a></li>
+                        <li><a href="#void">공과금</a></li>
+                        <li><a href="#void">예금/신탁</a></li>
+                        <li><a href="#void">보험</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#void" class="temp">기업뱅킹</a>
+                    <ul class="sub">
+                        <li><a href="#void">조회</a></li>
+                        <li><a href="#void">이체</a></li>
+                        <li><a href="#void">오픈뱅킹</a></li>
+                        <li><a href="#void">공과금</a></li>
+                        <li><a href="#void">예금/신탁</a></li>
+                        <li><a href="#void">보험</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#void" class="temp">금융상품</a>
+                    <ul class="sub">
+                        <li><a href="#void">예/적금</a></li>
+                        <li><a href="#void">대출</a></li>
+                        <li><a href="#void">펀드/신탁</a></li>
+                        <li><a href="#void">보험</a></li>
+                        <li><a href="#void">외환</a></li>
+                        <li><a href="#void">찾아가는 뱅킹</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#void" class="temp">서비스안내</a>
+                    <ul class="sub">
+                        <li><a href="#void">인터넷뱅킹 관리</a></li>
+                        <li><a href="#void">통장관리</a></li>
+                        <li><a href="#void">인증센터</a></li>
+                        <li><a href="#void">사고신고</a></li>
+                        <li><a href="#void">증명서발급서비스</a></li>
+                        <li><a href="#void">보안서비스</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#void" class="temp">카드</a>
+                    <ul class="sub">
+                        <li><a href="#void">카드안내/신청</a></li>
+                        <li><a href="#void">이용대금명세서</a></li>
+                        <li><a href="#void">이용내역조회</a></li>
+                        <li><a href="#void">결제예상금액조회</a></li>
+                        <li><a href="#void">신용카드 선결제</a></li>
+                        <li><a href="#void">카드대출</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- ======== Main Banner ======== -->
+    <div id="mainBanner">
+        <ul class="banner">
+            <li class="b1">
+                <a href="#void">
+                    <div class="content">
+                        <p class="title">
+                            모바일뱅킹에서 만나는<br>
+                            특별한 이벤트
+                        </p>
+                        <span class="sub">영진은행 행운의 주인공에 도전해 보세요! </span>
+                        <span class="moreBtn">자세히보기</span>
+                    </div>
+                </a>
+            </li>
+            <li class="b2">
+                <a href="#void">
+                    <div class="content">
+                        <p class="title">영진은행의 새 얼굴</p>
+                        <span class="sub">
+                            디지털 퍼스트(digital-first)’ 브랜드로<br>
+                            새로워진 영진은행을 만나보세요!
+                        </span>
+                        <span class="moreBtn">자세히보기</span>
+                    </div>
+                </a>
+            </li>
+            <li class="b3">
+                <a href="#void">
+                    <div class="content">
+                        <p class="title">지속가능한 투자</p>
+                        <span class="sub">
+                            자산을 키우면서<br>
+                            세상을 위한 긍정적인 변화에도 동참하세요!
+                        </span>
+                        <span class="moreBtn">자세히보기</span>
+                    </div>
+                </a>
+            </li>
+            <li class="b4">
+                <a href="#void">
+                    <div class="content">
+                        <p class="title">영진은행 마이줌통장</p>
+                        <span class="sub">
+                            고객이 직접 설정 및 변경할 수 있는 설정금액에 따라<br>
+                            차등금리를 제공하는 입출금 상품
+                        </span>
+                        <span class="moreBtn">자세히보기</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="arrowBtn">
+            <li class="leftBtn"><a href="#void"><img src="img/prev_btn.png" alt="prev arrow btn"></a></li>
+            <li class="rightBtn"><a href="#void"><img src="img/next_btn.png" alt="next arrow btn"></a></li>
+            <li class="playStop"><a href="#void"></a></li>
+        </ul>
+    </div>
+    <!-- ======== Quick Wrap ======== -->
+    <section id="quickWrap">
+        <h2 class="blind">퀵메뉴</h2>
+        <div class="center">
+            <ul class="quickWrap">
+                <li>
+                    <a href="#void">
+                        <p class="quick1"></p>
+                        <span>조회</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#void">
+                        <p class="quick2"></p>
+                        <span>이체</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#void">
+                        <p class="quick3"></p>
+                        <span>예금</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#void">
+                        <p class="quick4"></p>
+                        <span>대출</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#void">
+                        <p class="quick5"></p>
+                        <span>거래내역</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#void">
+                        <p class="quick6"></p>
+                        <span>환전</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#void">
+                        <p class="quick7"></p>
+                        <span>환율</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ======== Fixed quickWrap ======== -->
+    <section id="quickFixed">
+        <h2 class="blind">고정 퀵메뉴</h2>
+        <div class="quickFixed">
+            <ul>
+                <li><a href="#void">개인뱅크</a></li>
+                <li><a href="#void">채팅상담</a></li>
+                <li><a href="#void">분실신고</a></li>
+                <li><a href="#void">이용안내</a></li>
+                <li>
+                    <a href="#void">고객센터<br><br>
+                        <p>1588-1599</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ======== Container ======== -->
+    <section id="container">
+        <h2 class="blind">컨테이너</h2>
+
+        <!-- ======== Product ======== -->
+        <div class="productWrap">
+            <div class="center">
+                <div class="titleWrap">
+                    <p class="title">금융상품</p>
+                    <span class="sub">영진은행의 베스트 금융상품을 만나보세요.</span>
+                    <div class="viewMore">
+                        <a href="#void">더보기</a>
+                    </div>
+                </div>
+                <div class="productCon">
+                    <ul class="product">
+                        <li>
+                            <img src="img/product_01.jpg" alt="product image">
+                            <a href="#void">
+                                <span class="moreBtn">입출금예금</span>
+                                <p class="title">마이시그니처통장</p>
+                                <p class="line"></p>
+                                <span class="sub">
+                                    입출금이 자유롭고 은행거래실적에<br>
+                                    따른 약정이율 및 추가조건에 따라<br>
+                                    우대이율을 제공하는 입출금예금 상품
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <img src="img/product_02.jpg" alt="product image">
+                            <a href="#void">
+                                <span class="moreBtn">기업전용상품</span>
+                                <p class="title">IATA 항공권결제통장</p>
+                                <p class="line"></p>
+                                <span class="sub">
+                                    IATA 결제시스템을 통해서 항공권을<br>
+                                    구매하는 여행사 대상 상품
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <img src="img/product_03.jpg" alt="product image">
+                            <a href="#void">
+                                <span class="moreBtn">신용대출</span>
+                                <p class="title">우리사장님 e편한 통장대출</p>
+                                <p class="line"></p>
+                                <span class="sub">
+                                    가맹점 매출대금을 영진은행으로 이용하는 <br>
+                                    개인사업자 전용 통장대출<br>
+                                    매출대금입금 개인사업자 전용 가맹점 대출
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <img src="img/product_04.jpg" alt="product image">
+                            <a href="#void">
+                                <span class="moreBtn">신용대출</span>
+                                <p class="title">희망플러스 신용대출</p>
+                                <p class="line"></p>
+                                <span class="sub">
+                                    은행 방문없이 비대면으로<br>
+                                    대출신청부터 실행까지 가능한 상품<br>
+                                    코로나19 피해 개인사업자 지원 신용대출
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- ======== Event ======== -->
+        <div class="eventWrap">
+            <div class="center">
+                <div class="titleWrap">
+                    <p class="title">이벤트</p>
+                    <span class="sub">영진은행의 특별한 혜택을 만나보세요.</span>
+                    <div class="viewMore">
+                        <a href="#void">더보기</a>
+                    </div>
+                </div>
+
+                <div class="eventCon">
+                    <ul class="event">
+                        <li>
+                            <a class="imgBox" href="#void"><img src="img/event_01.png" alt="event image"></a>
+                            <a class="event_textBox" href="#void">
+                                <p class="title">
+                                    2022년 나만의 통장,<br>
+                                    마이시그니처 통장 만들기
+                                </p>
+                                <span class="date">2022.04.01-2022.08.31</span>
+                                <span class="moreBtn">참여하기</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="imgBox" href="#void"><img src="img/event_02.jpg" alt="event image"></a>
+                            <a class="event_textBox" href="#void">
+                                <p class="title">
+                                    2022 WON FESTA<br>
+                                    APR_MAY 2022 영진은행
+                                </p>
+                                <span class="date">2022.03.01-2022.12.31</span>
+                                <span class="moreBtn">참여하기</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="imgBox" href="#void"><img src="img/event_03.png" alt="event image"></a>
+                            <a class="event_textBox" href="#void">
+                                <p class="title">
+                                    ALL BINGO 성공하고<br>
+                                    스타벅스 아메리카노 받으세요!
+                                </p>
+                                <span class="date">2022.05.01-2022.05.31</span>
+                                <span class="moreBtn">참여하기</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- ======== App ======== -->
+        <div class="appWrap">
+            <div class="appCon">
+                <p class="title">
+                    영진은행을<br>
+                    가장 쉽게 만나는 방법</p>
+                <span class="sub">지금 <strong>영진은행 우리 WON 뱅킹</strong>에서 확인해보세요!</span>
+
+                <ul class="qr clearFix">
+                    <li>
+                        <a href="#void">
+                            <img src="img/app_qr_google.png" alt="google qr code">
+                            <span><img src="img/app_icon_google.png" alt="google app icon">Google Play</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#void">
+                            <img src="img/app_qr_apple.png" alt="apple qr code">
+                            <span><img src="img/app_icon_apple.png" alt="apple app icon">App Store</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ======== News ======== -->
+        <div class="newsWrap">
+            <div class="center">
+                <div class="titleWrap">
+                    <p class="title">새 소식</p>
+                    <span class="sub">
+                        영진은행의 새 소식을 알려드립니다.<br>
+                        매일 빠르게 업데이트되는 소식을 만나보세요.
+                    </span>
+                    <button>더 많은 소식보기</button>
+                </div>
+
+                <div class="newsCon">
+                    <ul class="news">
+                        <li>
+                            <a href="#void">
+                                <span class="moreBtn notice">공지사항</span>
+                                <p class="title">
+                                    수협은행/KB증권 금융거래
+                                    업무 일시중단 안내
+                                </p>
+                                <span class="date">2022.04.24</span>
+                                <img src="img/add_icon.png" alt="view more">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#void">
+                                <span class="moreBtn">보도자료</span>
+                                <p class="title">
+                                    영진은행, 자산관리
+                                    서비스 웹 페이지 개설
+                                </p>
+                                <span class="date">2022.04.24</span>
+                                <img src="img/add_icon.png" alt="view more">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#void">
+                                <span class="moreBtn">보도자료</span>
+                                <p class="title">
+                                    영진은행, 청년창업가에
+                                    경제/금융교육 재능기부
+                                </p>
+                                <span class="date">2022.04.24</span>
+                                <img src="img/add_icon.png" alt="view more">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- ======== CS ======== -->
+        <div class="csWrap">
+            <div class="center">
+                <div class="titleWrap">
+                    <p class="title">고객센터</p>
+                    <span class="sub">
+                        불편사항이나 원하시는 상담 내용을 키워드로 검색해주세요.<br>
+                        고객님의 궁금증을 풀어드리겠습니다.
+                    </span>
+                </div>
+
+                <div class="csCon">
+                    <div class="searchCon">
+                        <img src="img/sc_search.png" alt="search image">
+                        <form id="search">
+                            <input type="text" placeholder="원하시는 검색어를 입력하세요.">
+                        </form>
+                        <a href="#void"><img src="img/sc_search_icon.png" alt="search icon"></a>
+
+                        <ul class="trendList">
+                            <li class="trend">
+                                <p>이용한도<img src="img/search_trend_xBtn.png" alt="close button"></p>
+                            </li>
+                            <li class="trend">
+                                <p>적금통장<img src="img/search_trend_xBtn.png" alt="close button"></p>
+                            </li>
+                            <li class="trend">
+                                <p>카드분실<img src="img/search_trend_xBtn.png" alt="close button"></p>
+                            </li>
+                            <li class="trend">
+                                <p>공동인증서<img src="img/search_trend_xBtn.png" alt="close button"></p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <ul class="faq">
+                        <li>
+                            <p><strong>Q</strong>카드를 분실했는데 비대면으로 재발급 받고싶어요.</p>
+                        </li>
+                        <li>
+                            <p><strong>Q</strong>온라인으로 계좌개설이 가능한가요?</p>
+                        </li>
+                        <li>
+                            <p class="bottom"><strong>Q</strong>예금자보호제도가 무엇인가요?</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- ======== Info ======== -->
+        <div class="infoWrap">
+            <div class="center">
+                <div class="titleWrap">
+                    <p class="title">추천상품</p>
+                    <span class="sub">
+                        영진은행 고객님들의 행복한 미래를 위한<br>
+                        추천상품을 지금 만나보세요.
+                    </span>
+                </div>
+                <ul class="pc_info">
+                    <li>
+                        <a href="#void">
+                            <img src="img/recomp01.png" alt="recomp01">
+                            <span></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#void">
+                            <img src="img/recomp02.png" alt="recomp02">
+                            <span></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#void">
+                            <img src="img/recomp03.png" alt="recomp03">
+                            <span></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#void">
+                            <img src="img/recomp04.png" alt="recomp04">
+                            <span></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#void">
+                            <img src="img/recomp05.png" alt="recomp05">
+                            <span></span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="mobile_info">
+                    <ul class="info_top">
+                        <li>
+                            <a href="#void">
+                                <img src="img/recomp01.png" alt="recomp01">
+                                <span></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#void">
+                                <img src="img/recomp02.png" alt="recomp02">
+                                <span></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#void">
+                                <img src="img/recomp03.png" alt="recomp03">
+                                <span></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="info_bottom">
+                        <li>
+                            <a href="#void">
+                                <img src="img/recomp04.png" alt="recomp04">
+                                <span></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#void">
+                                <img src="img/recomp05.png" alt="recomp05">
+                                <span></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== Footer ======== -->
+    <footer>
+        <div class="center">
+            <div class="footTop">
+                <ul class="footMenu clearFix">
+                    <li><a href="#void"><strong>개인정보처리방침</strong></a></li>
+                    <li><a href="#void">신용정보활용체제</a></li>
+                    <li><a href="#void">보호금융상품등록</a></li>
+                    <li><a href="#void">금융사기예방안내</a></li>
+                    <li><a href="#void">상품공시</a></li>
+                </ul>
+
+                <ul class="sns clearFix">
+                    <li><a href="#void"><img src="img/footer_naverBlog.png" alt="Naver Blog"></a></li>
+                    <li><a href="#void"><img src="img/footer_facebook.png" alt="Facebook"></a></li>
+                    <li><a href="#void"><img src="img/footer_youtube.png" alt="Youtube"></a></li>
+                    <li><a href="#void"><img src="img/footer_insta.png" alt="Instagram"></a></li>
+                </ul>
+
+                <p class="line"></p>
+            </div>
+
+            <div class="footBottom">
+                <address>
+                    <p>	04632 서울특별시 중구 소공로 51(회현동 1가)</p>
+                    <p><strong>상담전화: 1588-5000</strong> (운영시간: 평일 09:00-18:00) | 고객의 말씀: 080-365-5000 | FAX:
+                        0505-001-3015
+                    </p>
+                </address>
+                <small>Copyright © Woori Bank. All Rights Reserved.</small>
+
+                <h1 class="footer_logo">
+                    <a href="index.html">
+                        <img class="pc_logo" src="img/logo.png" alt="logo">
+                        <img class="mobile_logo" src="img/mobile_logo.png" alt="mobile_logo">
+                    </a>
+                </h1>
+            </div>
+        </div>
+        <div class="upBtn"><a href="#void"><img src="img/up_icon.png" alt="up button"></a></div>
+    </footer>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+    
+<script>
+  let logoutTimer = null;
+
+  async function checkLoginStatus() {
+    try {
+      const res = await fetch('/api/user', { credentials: 'include',cache: 'no-store' });
+      if (!res.ok) return
+
+      const data = await res.json();
+      const loginArea = document.getElementById('loginArea');
+
+      if (data.userInfo) {
+        let loginTime = localStorage.getItem('loginTime');
+
+        // 없으면 지금을 기준으로 세팅
+        if (!loginTime) {
+          loginTime = new Date().toISOString();
+          localStorage.setItem('loginTime', loginTime);
+        }
+
+        const expiresAt = new Date(new Date(loginTime).getTime() + 60 * 60 * 1000); // +1시간
+        updateLoginArea(data.userInfo.name, expiresAt);
+      } else {
+        resetLoginArea();
+      }
+    } catch (err) {
+      console.error("로그인 상태 확인 실패:", err);
+      resetLoginArea();
+    }
+  }
+
+  function resetLoginArea() {
+    const loginArea = document.getElementById('loginArea');
+    loginArea.innerHTML = `
+      <img src="img/login_icon.png" alt="login icon">
+      로그인
+    `;
+    loginArea.href = "login.html";
+    localStorage.removeItem('loginTime');
+    if (logoutTimer) clearInterval(logoutTimer);
+  }
+
+  function updateLoginArea(name, expiresAt) {
+    const loginArea = document.getElementById('loginArea');
+
+    function updateTime() {
+      const now = new Date();
+      const diff = expiresAt - now;
+
+      if (diff <= 0) {
+        resetLoginArea();
+        return;
+      }
+
+      const minutes = Math.floor(diff / 60000);
+      const seconds = Math.floor((diff % 60000) / 1000);
+      loginArea.innerHTML = `
+        <img src="img/login_icon.png" alt="login icon">
+        환영합니다! ${name}님 <span style="font-size: 0.9em;">(${minutes}:${seconds.toString().padStart(2, '0')} 남음)</span>
+      `;
+      loginArea.href = "#";
+    }
+
+    updateTime(); // 초기 1회 실행
+    if (logoutTimer) clearInterval(logoutTimer);
+    logoutTimer = setInterval(updateTime, 1000);
+  }
+
+  // 페이지 로드시 실행
+  checkLoginStatus();
+  // 이후 1분마다 백엔드로 세션 재확인
+  setInterval(checkLoginStatus, 60000);
+</script>
+</body>
+
+</html>

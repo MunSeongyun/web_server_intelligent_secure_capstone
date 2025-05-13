@@ -13,12 +13,6 @@ async function bootstrap() {
     credentials: true,
   });
   setUpSession(app);
-  app.use(function (req, res, next) {
-    console.log('Request method:', req.method);
-    console.log('Session ID:', req.sessionID);
-    console.log('Session content:', req.session);
-    next();
-  });
   app.setGlobalPrefix('api');
   app.useGlobalPipes(
     new ValidationPipe({

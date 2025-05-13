@@ -4,10 +4,7 @@ import { GetUserInfo } from 'src/users/application/use-cases/get-user-info.use-c
 import { AuthGuard } from 'src/common/guards/auth.guard';
 export interface CustomRequest extends Request {
   user: {
-    id: number;
-    name: string;
-    email: string;
-    admin?: boolean;
+    userId: number;
   };
 }
 
@@ -19,7 +16,7 @@ export class UsersController {
   @UseGuards(AuthGuard)
   @Get()
   async findUserInfo(@Req() req: CustomRequest) {
-    const userId = req.user.id;
+    const userId = req.user.userId;
     const userInfo = await this.getUserInfo.execute(userId);
     return {
       message: '유저 정보를 반환합니다.',

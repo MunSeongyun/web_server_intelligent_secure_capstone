@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="영진은행">
+    <meta property="og:image" content="http://donghosting.dothome.co.kr/wooribank/img/logo3.png">
+    <meta property="og:description" content="영진은행 웹사이트">
+    <title>영진은행 로그인</title>
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <form id="loginForm">
+        <div class="min-h-screen py-6 flex flex-col justify-center sm:py-8">
+            <div class="relative py-3 sm:max-w-xl sm:mx-auto">
+                <div class="absolute inset-0 bg-gradient-to-r to-blue-500 from-blue-300 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div>
+                    <div class="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
+                        <div class="max-w-md mx-auto">
+                            <div class="divide-y divide-gray-200">
+                                <div class="py-7 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
+                                    <h1 class="logo"><a href="index.html"><img src="img/logo.png" alt="logo"></a></h1>
+                                    <p class="text-center">영진은행에서 안전한 인터넷뱅킹을 이용해보세요.</p>
+                                    <div class="justify-center flex flex-col py-6 sm-py-12">
+                                    <input name="email" style="margin-bottom: 10px;" placeholder="아이디" type="email" class=" px-2 py-2 outline-none border-2 border-gray-300 rounded-lg transition duration-200 ease-in-out hover:border-blue-600 focus:border-blue-600 focus:ring-blue-300 focus:ring">
+                                    <input name="password" placeholder="비밀번호" type="password" class=" px-2 py-2 outline-none border-2 border-gray-300 rounded-lg transition duration-200 ease-in-out hover:border-blue-600 focus:border-blue-600 focus:ring-blue-300 focus:ring">
+                                    <div style="margin-top:10px;">
+                                        <label>
+                                            <input style="margin-bottom:5px;" type="checkbox" class="checkbox" checked>
+                                            <span class="select-none">아이디 저장</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pt-6 text-base leading-6 font-bold sm:text-lg sm:leading-7">
+                                <p style="margin-bottom: 20px;" class="text-center">
+                                    <button type="submit" class="transition rounded-lg duration-200 ease-in-out px-4 py-2 bg-blue-500 text-white focus:ring-blue-300 focus:ring hover:bg-blue-600 select-none outline-none">로그인</button>
+                                </p>
+                                <p style="padding-bottom: 5px;" class="text-center font-normal"> 비밀번호를 잊으셨나요? <a href="#" class="text-blue-500 hover:text-blue-800">아이디/비밀번호 찾기</a></p>
+                                <p class="text-center font-normal"> 회원계정이 없으신가요? <a href="register.html" class="text-blue-500 hover:text-blue-800">지금 가입해보세요!</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+document.getElementById("loginForm").addEventListener("submit", async function(e) {
+  e.preventDefault(); // 폼 기본 제출 방지
+
+  const formData = new FormData(e.target);
+  const payload = {
+    email: formData.get("email"),
+    password: formData.get("password")
+  };
+
+  try {
+    const res = await fetch("/api/auth/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(payload)
+    });
+
+    if (!res.ok) throw new Error("아이디 또는 비밀번호가 잘못되었습니다.");
+
+    const data = await res.json();
+    alert("로그인에 성공했습니다.");
+    const loginTime = new Date().toISOString();
+    localStorage.setItem('loginTime', loginTime);
+    // 로그인 성공 후 리다이렉트
+    window.location.href = "/index.html"; // 로그인 성공 후 이동할 페이지
+  } catch (err) {
+    alert("아이디 또는 비밀번호가 잘못되었습니다.");
+  }
+});
+</script>
+</body>
+</html>
