@@ -20,7 +20,6 @@ export function setUpSession(app: INestApplication): void {
       resave: false,
       saveUninitialized: false,
       store: redisStore,
-      rolling: true,
       cookie: {
         secure: true,
         sameSite: 'none',

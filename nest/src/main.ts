@@ -5,12 +5,20 @@ import { setUpSession } from './common/setting/init.session';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
+  const expressApp = app.getHttpAdapter().getInstance();
+  expressApp.set('trust proxy', 1);
   app.enableCors({
     origin: process.env.CORS_ORIGIN ?? 'https://localhost.com',
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
   });
   setUpSession(app);
+  app.use(function (req, res, next) {
+    console.log('Request method:', req.method);
+    console.log('Session ID:', req.sessionID);
+    console.log('Session content:', req.session);
+    next();
+  });
   app.setGlobalPrefix('api');
   app.useGlobalPipes(
     new ValidationPipe({

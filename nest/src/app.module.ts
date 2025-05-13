@@ -22,6 +22,7 @@ import { PassportModule } from '@nestjs/passport';
     AuthModule,
     PassportModule.register({
       session: true,
+      defaultStrategy: 'local',
     }),
   ],
   controllers: [AppController],

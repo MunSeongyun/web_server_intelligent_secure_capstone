@@ -36,6 +36,7 @@
     "mysql2": "^3.14.1",
     "passport": "^0.7.0",
     "passport-local": "^1.0.0",
+    "passport-session": "^1.0.2",
     "reflect-metadata": "^0.2.0",
     "rxjs": "^7.8.1",
     "typeorm": "^0.3.23"
@@ -45,6 +46,7 @@
     "@nestjs/schematics": "^10.0.0",
     "@nestjs/testing": "^10.0.0",
     "@types/express": "^5.0.0",
+    "@types/express-session": "^1.18.1",
     "@types/jest": "^29.5.2",
     "@types/node": "^20.3.1",
     "@types/supertest": "^6.0.0",
