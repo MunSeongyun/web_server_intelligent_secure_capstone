@@ -1815,7 +1815,7 @@ footer .center .footBottom .footer_logo img {
 footer .center .footBottom .footer_logo p {
   width: 160px;
   height: 64px;
-  background-image: url(../img/footer_logo.jpg);
+  background-image: url(../img/footer_logo.png);
 }
 @media screen and (max-width: 1050px) {
   footer .center .footBottom .footer_logo p {
