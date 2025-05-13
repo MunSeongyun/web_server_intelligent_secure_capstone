@@ -21,6 +21,16 @@ export class UsersController {
   async findUserInfo(@Req() req: CustomRequest) {
     const userId = req.user.id;
     const userInfo = await this.getUserInfo.execute(userId);
-    return { message: '유저 정보를 반환합니다.', userInfo };
+    return {
+      message: '유저 정보를 반환합니다.',
+      userInfo: {
+        id: userInfo.id,
+        name: userInfo.name,
+        email: userInfo.email,
+        phone: userInfo.phone,
+        dateOfBirth: userInfo.dateOfBirth,
+        address: userInfo.address,
+      },
+    };
   }
 }
