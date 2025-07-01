@@ -1,4 +1,4 @@
-@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+
 /* 모든 요소의 바깥여백, 안쪽여백 제거하기 */
 body,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,p,form,fieldset,button,input{
     margin:0;

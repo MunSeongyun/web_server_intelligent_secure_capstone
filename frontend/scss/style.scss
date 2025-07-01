@@ -827,7 +827,6 @@ header {
         &:focus a,
         &:hover a {
             color: white;
-            background-image: url(../img/add_icon_focused.png);
         }
         a {
             display: block;
@@ -838,7 +837,6 @@ header {
                 right: 35px;
             }
             background: {
-                image: url(../img/add_icon.png);
                 repeat: no-repeat;
                 position: 57.5px 9px;
                 size: 16px;

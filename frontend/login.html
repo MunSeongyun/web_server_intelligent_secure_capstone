@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="영진은행">
+    <meta property="og:title" content="ヨンジン銀行">
     <meta property="og:image" content="http://donghosting.dothome.co.kr/wooribank/img/logo3.jpg">
-    <meta property="og:description" content="영진은행 웹사이트">
-    <title>영진은행 로그인</title>
+    <meta property="og:description" content="ヨンジン銀行ウェブサイト">
+    <title>ヨンジン銀行ログイン</title>
     <link rel="shortcut icon" href="img/favicon.png">
     <link rel="stylesheet" href="css/login.css">
 </head>
@@ -22,24 +22,24 @@
                             <div class="divide-y divide-gray-200">
                                 <div class="py-7 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
                                     <h1 class="logo"><a href="index.html"><img src="img/logo.png" alt="logo"></a></h1>
-                                    <p class="text-center">영진은행에서 안전한 인터넷뱅킹을 이용해보세요.</p>
+                                    <p class="text-center">ヨンジン銀行で安全なインターネットバンキングを利用してみましょう。</p>
                                     <div class="justify-center flex flex-col py-6 sm-py-12">
-                                    <input name="email" style="margin-bottom: 10px;" placeholder="아이디" type="email" class=" px-2 py-2 outline-none border-2 border-gray-300 rounded-lg transition duration-200 ease-in-out hover:border-blue-600 focus:border-blue-600 focus:ring-blue-300 focus:ring">
-                                    <input name="password" placeholder="비밀번호" type="password" class=" px-2 py-2 outline-none border-2 border-gray-300 rounded-lg transition duration-200 ease-in-out hover:border-blue-600 focus:border-blue-600 focus:ring-blue-300 focus:ring">
+                                    <input name="email" style="margin-bottom: 10px;" placeholder="ユーザーID" type="email" class=" px-2 py-2 outline-none border-2 border-gray-300 rounded-lg transition duration-200 ease-in-out hover:border-blue-600 focus:border-blue-600 focus:ring-blue-300 focus:ring">
+                                    <input name="password" placeholder="パスワード" type="password" class=" px-2 py-2 outline-none border-2 border-gray-300 rounded-lg transition duration-200 ease-in-out hover:border-blue-600 focus:border-blue-600 focus:ring-blue-300 focus:ring">
                                     <div style="margin-top:10px;">
                                         <label>
                                             <input style="margin-bottom:5px;" type="checkbox" class="checkbox" checked>
-                                            <span class="select-none">아이디 저장</span>
+                                            <span class="select-none">ユーザーIDを保存</span>
                                         </label>
                                     </div>
                                 </div>
                             </div>
                             <div class="pt-6 text-base leading-6 font-bold sm:text-lg sm:leading-7">
                                 <p style="margin-bottom: 20px;" class="text-center">
-                                    <button type="submit" class="transition rounded-lg duration-200 ease-in-out px-4 py-2 bg-blue-500 text-white focus:ring-blue-300 focus:ring hover:bg-blue-600 select-none outline-none">로그인</button>
+                                    <button type="submit" class="transition rounded-lg duration-200 ease-in-out px-4 py-2 bg-blue-500 text-white focus:ring-blue-300 focus:ring hover:bg-blue-600 select-none outline-none">ログイン</button>
                                 </p>
-                                <p style="padding-bottom: 5px;" class="text-center font-normal"> 비밀번호를 잊으셨나요? <a href="#" class="text-blue-500 hover:text-blue-800">아이디/비밀번호 찾기</a></p>
-                                <p class="text-center font-normal"> 회원계정이 없으신가요? <a href="register.html" class="text-blue-500 hover:text-blue-800">지금 가입해보세요!</a></p>
+                                <p style="padding-bottom: 5px;" class="text-center font-normal"> パスワードをお忘れですか？ <a href="#" class="text-blue-500 hover:text-blue-800"><br/>ユーザーID／パスワードの確認</a></p>
+                                <p class="text-center font-normal"> アカウントをお持ちでない方はこちら <a href="register.html" class="text-blue-500 hover:text-blue-800"><br/>今すぐ登録しましょう！</a></p>
                             </div>
                         </div>
                     </div>
@@ -67,16 +67,16 @@ document.getElementById("loginForm").addEventListener("submit", async function(e
       body: JSON.stringify(payload)
     });
 
-    if (!res.ok) throw new Error("아이디 또는 비밀번호가 잘못되었습니다.");
+    if (!res.ok) throw new Error("ユーザーIDまたはパスワードが間違っています。");
 
     const data = await res.json();
-    alert("로그인에 성공했습니다.");
+    alert("ログインに成功しました。");
     const loginTime = new Date().toISOString();
     localStorage.setItem('loginTime', loginTime);
     // 로그인 성공 후 리다이렉트
     window.location.href = "/index.html"; // 로그인 성공 후 이동할 페이지
   } catch (err) {
-    alert("아이디 또는 비밀번호가 잘못되었습니다.");
+    alert("ユーザーIDまたはパスワードが間違っています。");
   }
 });
 </script>

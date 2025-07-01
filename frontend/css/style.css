@@ -816,15 +816,13 @@ header #mNav {
 }
 .titleWrap .viewMore:focus a, .titleWrap .viewMore:hover a {
   color: white;
-  background-image: url(../img/add_icon_focused.png);
 }
 .titleWrap .viewMore a {
   display: block;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
-  padding-right: 35px;
-  background-image: url(../img/add_icon.png);
+  padding-right: 10px;
   background-repeat: no-repeat;
   background-position: 57.5px 9px;
   background-size: 16px;
